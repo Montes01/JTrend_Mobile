@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLimit"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainHeader"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_margin="5sp"
+        app:cardBackgroundColor="@color/backgroundCards"
+        app:cardCornerRadius="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="match_parent"
+            android:background="@color/inputColors"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginVertical="10sp"
+            android:layout_gravity="start"
+            />
+
+        <SearchView
+            android:layout_width="220sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="5sp"
+        app:cardBackgroundColor="@color/backgroundCards"
+        app:cardCornerRadius="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainHeader">
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

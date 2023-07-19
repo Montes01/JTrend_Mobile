@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">JTrend</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="register">Registrarse</string>
+    <string name="Register">Crear cuenta</string>
+    <string name="emailInput">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="RegisterButtons">Registrate</string>
+    <string name="Document">Documento</string>
+    <string name="Names">Nombres</string>
+    <string name="LastNames">Apellidos</string>
+    <string name="passwordInput">Contraseña</string>
+    <string name="inputDate">Fecha de nacimiento</string>
+</resources>
