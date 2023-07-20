@@ -7,7 +7,7 @@
     android:background="@color/backgroundLimit"
     android:paddingHorizontal="15sp"
     android:paddingVertical="20sp"
-    tools:context=".Login">
+    tools:context=".LoginAndRegister.Login">
 
     <TextView
         android:id="@+id/tittleText"

@@ -1,4 +1,4 @@
-package com.example.jtrend
+package com.example.jtrend.LoginAndRegister
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.jtrend.Connection
+import com.example.jtrend.MainActivity
+import com.example.jtrend.R
 import java.sql.ResultSet
 import java.sql.Statement
 

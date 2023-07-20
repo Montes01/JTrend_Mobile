@@ -16,10 +16,10 @@
         android:theme="@style/Theme.JTrend"
         tools:targetApi="31">
         <activity
-            android:name=".Register"
+            android:name=".LoginAndRegister.Register"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".LoginAndRegister.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

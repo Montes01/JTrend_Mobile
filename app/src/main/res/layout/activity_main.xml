@@ -18,19 +18,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <ImageView
-            android:layout_width="70sp"
-            android:layout_height="match_parent"
-            android:background="@color/inputColors"
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="15sp"
             android:layout_marginVertical="10sp"
-            android:layout_gravity="start"
-            />
+            app:cardCornerRadius="15sp"
+            >
+            <ImageView
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/inputColors"
+                android:layout_gravity="start"
+                />
+
+        </androidx.cardview.widget.CardView>
 
         <SearchView
+            android:id="@+id/BusquedaPublis"
             android:layout_width="220sp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_marginLeft="15sp"
+            android:background="@color/inputColors"
+            android:foregroundTint="@color/white" />
 
 
     </androidx.cardview.widget.CardView>
@@ -49,6 +62,11 @@
         app:layout_constraintTop_toBottomOf="@+id/mainHeader">
 
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/PublicationList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
     </androidx.cardview.widget.CardView>
 
 

@@ -1,4 +1,4 @@
-package com.example.jtrend
+package com.example.jtrend.LoginAndRegister
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.jtrend.Connection
+import com.example.jtrend.R
 import java.sql.PreparedStatement
 
 class Register : AppCompatActivity() {
