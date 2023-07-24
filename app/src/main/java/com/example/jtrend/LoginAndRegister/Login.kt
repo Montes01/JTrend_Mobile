@@ -45,15 +45,19 @@ class Login : AppCompatActivity() {
                 passwordInput.text.toString()
             );
         }
-        registerText.setOnClickListener{ startActivity(registerPage)}
+        registerText.setOnClickListener { startActivity(registerPage) }
     }
-
-
 
 
     private fun login(email: String, password: String) {
         var consulta: String = "EXEC usp_ValidacionCuenta '$email', '$password'";
-        var state: Statement? = Connection.getConnection()?.createStatement();
+        var state: Statement?;
+        try {
+            state = Connection.getConnection()?.createStatement();
+        } catch (e: Exception) {
+            Toast.makeText(this, "Conexion a base de datos fallida", Toast.LENGTH_SHORT);
+            return;
+        }
         try {
             var table: ResultSet? = state?.executeQuery(consulta);
             table?.next();

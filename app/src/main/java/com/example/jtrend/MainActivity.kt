@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun setEvents(){
+        newPublicactionPage.putExtra("ID_USUARIO", intent.getIntExtra("ID_USUARIO", 0))
         newPostOpen.setOnClickListener{startActivity(newPublicactionPage)}
     }
 

@@ -9,9 +9,9 @@ import java.sql.DriverManager
 import java.sql.SQLException
 
 object Connection {
-    val user = "sqlmontes";
+    val user = "sqlMontes";
     val pass = "123456";
-    val ip = "192.168.0.15";
+    val ip = "10.199.16.44";
     val port = "1433";
     val bd = "JTrend";
     fun getConnection():Connection?{
