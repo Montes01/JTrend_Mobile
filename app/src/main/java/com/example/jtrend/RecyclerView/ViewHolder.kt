@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.jtrend.R
 
 class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
-    var userName = itemView.findViewById<TextView>(R.id.UserNameShare)
+    var UserName = itemView.findViewById<TextView>(R.id.UserNameShare)
     var ContentShare = itemView.findViewById<TextView>(R.id.ContentShare)
-
+    var TittleShare = itemView.findViewById<TextView>(R.id.TittleShare)
 }

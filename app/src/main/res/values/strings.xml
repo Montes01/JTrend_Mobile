@@ -11,4 +11,7 @@
     <string name="LastNames">Apellidos</string>
     <string name="passwordInput">Contraseña</string>
     <string name="inputDate">Fecha de nacimiento</string>
+    <string name="tittle">titulo</string>
+    <string name="Share">compartir</string>
+    <string name="content">contenido</string>
 </resources>

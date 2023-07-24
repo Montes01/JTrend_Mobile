@@ -7,4 +7,5 @@
     <color name="appMainColor">#440a6f</color>
     <color name="transparent">#00440a6f</color>
     <color name="inputColors">#aa222222</color>
+    <color name="labelColor">#aa999999</color>
 </resources>

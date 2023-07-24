@@ -15,7 +15,8 @@ class Adapter (private var dataSource: List<Publicacion>) : RecyclerView.Adapter
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = dataSource[position];
-        holder.userName.text = data.userName;
+        holder.UserName.text = "( ${data.userName}) ";
+        holder.TittleShare.text = data.tittle
         holder.ContentShare.text = data.body
     }
 

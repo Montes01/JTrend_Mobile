@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLimit"
+    tools:context=".newPublication"
+    android:padding="20sp">
+
+    <TextView
+        android:id="@+id/tituloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tittle"
+        android:textColor="@color/labelColor"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tittleNewPublication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        app:cardBackgroundColor="@color/backgroundCards"
+        app:cardCornerRadius="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloText">
+
+        <EditText
+            android:id="@+id/tittlePublication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/transparent"
+            android:paddingHorizontal="15sp"
+            android:textColor="@color/white"
+            tools:text="Titulo de la publicacion" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/bodyNewPublicationTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="@string/content"
+        android:textColor="@color/labelColor"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleNewPublication"
+        tools:text="Contenido" />
+
+    <androidx.cardview.widget.CardView
+        android:labelFor="@+id/ContentPublication"
+        android:id="@+id/bodyNewPublication"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15sp"
+        app:cardBackgroundColor="@color/backgroundCards"
+        app:cardCornerRadius="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bodyNewPublicationTittle">
+
+        <EditText
+            android:id="@+id/ContentPublication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:paddingHorizontal="15sp"
+            android:textColor="@color/white"
+            tools:text="Titulo de la publicacion" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="15sp"
+            app:cardBackgroundColor="@color/appMainColor">
+
+            <Button
+                android:id="@+id/sharePost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:text="@string/Share"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/appMainColor"
+        app:cardCornerRadius="100px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/closePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12sp"
+            android:layout_marginVertical="6sp"
+            android:fontFamily="sans-serif-black"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
